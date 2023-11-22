@@ -1,0 +1,3 @@
+Question 1 pprasad1
+The query finds all the years in which a movie[s] made no revenue and orders the result in descending order of number of movies with 
+NULL revenue (i.e., the year with the highest number of movies with NULL revenue is placed at the top)

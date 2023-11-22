@@ -1,0 +1,2 @@
+Question 2 pprasad1
+The query finds all years where a movie available on Netflix made a revenue more than 50

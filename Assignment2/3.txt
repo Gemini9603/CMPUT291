@@ -1,0 +1,3 @@
+Question 3 pprasad1
+The query finds the number of movies streamed on both Netflix and Amazon Prime Video, where the movie had votes above the average 
+number of votes for a movie
