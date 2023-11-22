@@ -2,7 +2,7 @@ import random
 from random import sample
 import pandas as pd
 import sqlite3
-conn = sqlite3.connect("./Large.db")     #TODO: Change the database name as required
+conn = sqlite3.connect("./Large.")     #TODO: Change the database name as required
 c = conn.cursor()
 c.execute('PRAGMA foreign_keys=ON;')
 
