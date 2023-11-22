@@ -2,7 +2,7 @@ import random
 from random import sample
 import pandas as pd
 import sqlite3
-conn = sqlite3.connect("./Large.db")
+conn = sqlite3.connect("./Large.db")     #TODO: Change the database name as required
 c = conn.cursor()
 c.execute('PRAGMA foreign_keys=ON;')
 
@@ -33,7 +33,7 @@ c.execute('''CREATE TABLE temp (
 conn.commit()
 
 
-row = column.sample(n=33000)
+row = column.sample(n=33000)     #TODO: Change the number of rows according to the database
 
 df = pd.DataFrame(row)
 df.to_sql('temp', conn, if_exists='replace', index=False)
