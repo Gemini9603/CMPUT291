@@ -6,7 +6,7 @@ conn = sqlite3.connect("./Large.db")     #TODO: Change the database name as requ
 c = conn.cursor()
 c.execute('PRAGMA foreign_keys=ON;')
 
-data = pd.read_csv(r'C:\Users\pooja\OneDrive\Documents\CMPUT291\Assignment3\olist_order_items_dataset.csv')
+data = pd.read_csv(r'./olist_order_items_dataset.csv')
 column = data[["order_id", "order_item_id", "product_id", "seller_id"]]
 
 c.execute('''DROP TABLE IF EXISTS Order_items;''')
