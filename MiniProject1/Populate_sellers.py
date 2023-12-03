@@ -6,7 +6,7 @@ conn = sqlite3.connect("./Large.db")    #TODO: Change the database name as requi
 c = conn.cursor()
 c.execute('PRAGMA foreign_keys=ON;')
 
-data = pd.read_csv(r'C:\Users\pooja\OneDrive\Documents\CMPUT291\Assignment3\olist_sellers_dataset.csv')
+data = pd.read_csv(r'./olist_sellers_dataset.csv')
 column1 = data[["seller_id", "seller_zip_code_prefix"]]
 column = column1.rename(columns = {'seller_zip_code_prefix':'seller_postal_code'})
 
