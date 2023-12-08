@@ -193,4 +193,4 @@ def main():
     create_graph(small, medium, large)
 
 if __name__ == "__main__":
-    main
+    main()
